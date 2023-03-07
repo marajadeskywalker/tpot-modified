@@ -436,7 +436,7 @@ class TPOTBase(BaseEstimator):
         self._pset = gp.PrimitiveSetTyped("MAIN", [np.ndarray], Output_Array)
         self._pset.renameArguments(ARG0="input_matrix")
         self._add_operators()
-
+        print(self.operators)
         if self.verbosity > 2:
             print(
                 "{} operators have been imported by TPOT.".format(len(self.operators))
